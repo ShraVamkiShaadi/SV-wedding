@@ -385,6 +385,9 @@ a:hover{color:var(--color-accent-800)}
   .gate-photo img{object-position:center 58%}
   .gate-photo::after{display:none}
   [data-card].is-hidden,[data-card].flip.is-hidden{transform:translateY(42px) scale(.96)}
+  .event .event-photo.motion-piece,.event.flip .event-photo.motion-piece{
+    transform:translateY(24px) scale(.96)}
+  .event.is-in .event-photo.motion-piece,.event.flip.is-in .event-photo.motion-piece{transform:none}
 }
 </style>
 </head>
@@ -448,7 +451,6 @@ a:hover{color:var(--color-accent-800)}
         <span class="lockup-word lockup-dot" aria-hidden="true"></span>
       </p>
       <h2 data-split>You are invited</h2>
-      <p class="hero-lede" data-reveal>With love, laughter &amp; blessings, we invite you to celebrate our wedding festivities — three days of turmeric, henna, music and vows in Secunderabad.</p>
       <div class="chips" data-reveal>
         <span class="chip">12 Oct · Haldi</span>
         <span class="chip">13 Oct · Mehendi &amp; Sangeeth</span>
