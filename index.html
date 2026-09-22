@@ -153,8 +153,12 @@ a:hover{color:var(--color-accent-800)}
   min-width:0;line-height:0;overflow:hidden;padding:clamp(7px,1.4vw,12px);
   background:var(--color-neutral-100);border-radius:999px 999px var(--radius-lg) var(--radius-lg);
   box-shadow:var(--shadow-lg)}
-.gate-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 58%;
+.gate-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 88%;
   border-radius:999px 999px var(--radius-md) var(--radius-md)}
+.gate-photo::after{content:"";position:absolute;z-index:1;pointer-events:none;
+  top:clamp(7px,1.4vw,12px);left:clamp(7px,1.4vw,12px);right:clamp(7px,1.4vw,12px);
+  height:clamp(30px,3.6vw,52px);border-radius:999px 999px 0 0;
+  background:linear-gradient(to bottom,#fffefa 72%,rgba(255,254,250,0))}
 
 /* ── Fixed chrome ──────────────────────────────────────────────────── */
 .progress{position:fixed;top:0;left:0;height:3px;width:100%;transform:scaleX(0);
@@ -378,6 +382,8 @@ a:hover{color:var(--color-accent-800)}
   .gate-name.second{margin-left:0}
   .weds,.gate-cta{justify-content:center}
   .gate-photo{width:min(72vw,310px);aspect-ratio:9/12}
+  .gate-photo img{object-position:center 58%}
+  .gate-photo::after{display:none}
   [data-card].is-hidden,[data-card].flip.is-hidden{transform:translateY(42px) scale(.96)}
 }
 </style>
